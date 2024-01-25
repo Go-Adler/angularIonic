@@ -21,7 +21,7 @@
       <ion-card-subtitle> {{ movie.tagline }}</ion-card-subtitle>
       <ion-text color="tertiary">
         @for (g of movie.genres; track g.id; let isLast = $last) {
-          <span>{{ g.name }} {{ !isLast ? '.' : ''}}</span>
+          <span>{{ g.name }} {{ !isLast ? '. ' : ''}}</span>
         }
       </ion-text>
     </ion-card-header>
@@ -44,4 +44,3 @@
   </ion-card>
  }
 </ion-content>
-
